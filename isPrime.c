@@ -12,7 +12,8 @@ void main()
                 break;
             }
     }
-    if(i==N){
+    if(i==N)
+        {
         printf("prime number\n ");
     }
     else{
