@@ -1,24 +1,23 @@
-//checking a number is prime or not
 #include <stdio.h>
+#include <stdlib.h>
+
 void main()
 {
-    int N,i,c=0;
+    int n,i;
     system("cls");
     printf("Enter a number ");
-    scanf("%d",&N);
+    scanf("%d",&n);
 
-    for(i=2;i<N;i++){
-            if(N%i==0){
-                break;
-            }
+    for(i=2;i<n;i++)
+    {
+        if(n%i == 0)
+        break;
     }
-    if(i==N)
-        {
-        printf("prime number\n ");
-    }
-    else{
-        printf("\n not a prime number \n");
-    }
+    if(i==n)
+        printf("prime number\n");
+    else
+        printf("not prime\n");
+    system("pause");
 
-system("pause");
+
 }
